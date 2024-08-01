@@ -1,4 +1,9 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [opener]
-edit = [{ run = 'nvim "%*"', block = true }]
+edit = [
+  { run = 'nvim "%*"', block = true, for = 'windows' },
+  { run = 'nvim "$*"', block = true, for = 'unix' },
+  { run = '%*', orphan = true, desc = 'default', for = 'windows' },
+  { run = '$*', orphan = true, desc = 'default', for = 'unix' },
+]
