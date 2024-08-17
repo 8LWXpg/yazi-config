@@ -2,8 +2,9 @@
 
 [opener]
 edit = [
-  { run = 'nvim "%*"', block = true, for = 'windows' },
+  { run = 'nvim %*', block = true, for = 'windows' },
   { run = 'nvim "$*"', block = true, for = 'unix' },
   { run = '%*', orphan = true, desc = 'default', for = 'windows' },
   { run = '$*', orphan = true, desc = 'default', for = 'unix' },
 ]
+play = [{ run = '%*', orphan = true, desc = 'default', for = 'windows' }]
