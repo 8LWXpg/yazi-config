@@ -1,2 +1,2 @@
 require("full-border"):setup()
-require("starship"):setup()
+-- require("starship"):setup()
