@@ -4,3 +4,25 @@
 on = "f"
 run = "plugin jump-to-char"
 desc = "Jump to char"
+
+[[mgr.prepend_keymap]]
+on = "!"
+for = "unix"
+run = 'shell "$SHELL" --block'
+desc = "Open $SHELL here"
+
+[[mgr.prepend_keymap]]
+on = "!"
+for = "windows"
+run = 'shell "pwsh" --block'
+desc = "Open PowerShell here"
+
+[[mgr.prepend_keymap]]
+on = ";"
+run = 'plugin custom-shell -- auto --interactive'
+desc = "custom-shell as default, interactive"
+
+[[mgr.prepend_keymap]]
+on = ":"
+run = 'plugin custom-shell -- auto --interactive --wait --block'
+desc = "custom-shell as default, interactive, block"
