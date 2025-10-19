@@ -26,3 +26,13 @@ desc = "custom-shell as default, interactive"
 on = ":"
 run = 'plugin custom-shell -- auto --interactive --wait --block'
 desc = "custom-shell as default, interactive, block"
+
+[[mgr.append_keymap]]
+on = ["g", "o"]
+run = "cd ~/Documents"
+desc = "Go ~/Documents"
+
+[[mgr.append_keymap]]
+on = ["g", "s"]
+run = "cd ~/Pictures/Screenshots"
+desc = "Go ~/Pictures/Screenshots"

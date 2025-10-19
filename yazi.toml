@@ -6,10 +6,12 @@ edit = [
   { run = 'nvim "$*"', block = true, for = 'unix' },
   { run = '%*', orphan = true, desc = 'Default', for = 'windows' },
   { run = '$*', orphan = true, desc = 'Default', for = 'unix' },
+  { run = 'code %*', orphan = true, desc = 'VSCode', for = 'windows' },
+  { run = 'code $*', orphan = true, desc = 'VSCode', for = 'unix' },
 ]
 play = [{ run = '%*', orphan = true, desc = 'Default', for = 'windows' }]
 convert_hevc = [
-  { run = 'pwsh "E:\ps1\path\hevc.ps1" "%1"', block = true, desc = 'Convert to HEVC', for = 'windows' },
+  { run = 'pwsh "E:\ps1\path\hevc.ps1" "-LiteralPath" "%1"', block = true, desc = 'Convert to HEVC', for = 'windows' },
 ]
 drag = [{ run = 'dwag %*', desc = 'Drag', for = 'windows' }]
 
