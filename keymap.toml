@@ -1,38 +1,44 @@
-"$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
+'$schema' = 'https://yazi-rs.github.io/schemas/keymap.json'
 
 [[mgr.prepend_keymap]]
-on = "f"
-run = "plugin jump-to-char"
-desc = "Jump to char"
+on = 'f'
+run = 'plugin jump-to-char'
+desc = 'Jump to char'
 
 [[mgr.prepend_keymap]]
-on = "!"
-for = "unix"
-run = 'shell "$SHELL" --block'
-desc = "Open $SHELL here"
+on = '!'
+for = 'unix'
+run = "shell '$SHELL' --block"
+desc = 'Open $SHELL here'
 
 [[mgr.prepend_keymap]]
-on = "!"
-for = "windows"
-run = 'shell "pwsh" --block'
-desc = "Open PowerShell here"
+on = '!'
+for = 'windows'
+run = "shell 'pwsh' --block"
+desc = 'Open PowerShell here'
 
 [[mgr.prepend_keymap]]
-on = ";"
+on = ';'
 run = 'plugin custom-shell -- auto --interactive'
-desc = "custom-shell as default, interactive"
+desc = 'custom-shell as default, interactive'
 
 [[mgr.prepend_keymap]]
-on = ":"
+on = ':'
 run = 'plugin custom-shell -- auto --interactive --wait --block'
-desc = "custom-shell as default, interactive, block"
+desc = 'custom-shell as default, interactive, block'
+
+[[mgr.prepend_keymap]]
+on = '<C-o>'
+run = 'shell -- dwag %*'
+for = 'windows'
+desc = 'Drag files/folders'
 
 [[mgr.append_keymap]]
-on = ["g", "o"]
-run = "cd ~/Documents"
-desc = "Go ~/Documents"
+on = ['g', 'o']
+run = 'cd ~/Documents'
+desc = 'Go ~/Documents'
 
 [[mgr.append_keymap]]
-on = ["g", "s"]
-run = "cd ~/Pictures/Screenshots"
-desc = "Go ~/Pictures/Screenshots"
+on = ['g', 's']
+run = 'cd ~/Pictures/Screenshots'
+desc = 'Go ~/Pictures/Screenshots'
