@@ -1,5 +1,8 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
+[mgr]
+linemode = "mtime"
+
 [opener]
 edit = [
   { run = 'nvim %*', block = true, for = 'windows' },
