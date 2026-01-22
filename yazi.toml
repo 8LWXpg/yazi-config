@@ -1,7 +1,7 @@
-"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+#:schema https://yazi-rs.github.io/schemas/yazi.json
 
 [mgr]
-linemode = "mtime"
+linemode = 'mtime'
 
 [opener]
 edit = [

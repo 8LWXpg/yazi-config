@@ -9,11 +9,16 @@ rev = "2ad42fa"
 hash = "6d1fdb3792f6c003ab8ec0266c5eb142"
 
 [[plugin.deps]]
-use = "8LWXpg/custom-shell"
-rev = "9b020da"
-hash = "847a676b6315ab02ecc3383bcfa42182"
+use = "AnirudhG07/custom-shell"
+rev = "3449686"
+hash = "8009873342496fdb042bba09e239eef3"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "eca1861"
+hash = "e519d894e94ded741e06aae4d4775981"
 
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
-rev = "5f56364"
-hash = "c0bf69ad2c44005892d586e9693993c6"
+rev = "8e6296f"
+hash = "d9da921c3bd37ba32ee27a8a7a40461f"
