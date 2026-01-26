@@ -1,12 +1,7 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "2ad42fa"
+rev = "e07bf41"
 hash = "cf5e10bd4b119e1c1b0c0cc7447715e0"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:jump-to-char"
-rev = "2ad42fa"
-hash = "6d1fdb3792f6c003ab8ec0266c5eb142"
 
 [[plugin.deps]]
 use = "AnirudhG07/custom-shell"
@@ -18,7 +13,12 @@ use = "Rolv-Apneseth/starship"
 rev = "eca1861"
 hash = "e519d894e94ded741e06aae4d4775981"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "e07bf41"
+hash = "a94dca872caafd80fc5302668a092cbd"
+
 [[flavor.deps]]
-use = "BennyOe/tokyo-night"
-rev = "8e6296f"
-hash = "d9da921c3bd37ba32ee27a8a7a40461f"
+use = "8LWXpg/catppuccin-mocha-blue"
+rev = "2583d4d"
+hash = "4a6f3b936b9b2e878f241a9ca032014a"
