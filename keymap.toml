@@ -29,7 +29,7 @@ desc = 'custom-shell as default, interactive, block'
 
 [[mgr.prepend_keymap]]
 on = '<C-o>'
-run = 'shell -- dwag %*'
+run = 'shell -- dwag %s'
 for = 'windows'
 desc = 'Drag files/folders'
 
