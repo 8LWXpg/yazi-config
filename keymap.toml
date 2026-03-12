@@ -1,44 +1,49 @@
 #:schema https://yazi-rs.github.io/schemas/keymap.json
 
 [[mgr.prepend_keymap]]
-on = 'f'
-run = 'plugin jump-to-char'
-desc = 'Jump to char'
+on = "f"
+run = "plugin jump-to-char"
+desc = "Jump to char"
 
 [[mgr.prepend_keymap]]
-on = '!'
-for = 'unix'
+on = "!"
+for = "unix"
 run = "shell '$SHELL' --block"
-desc = 'Open $SHELL here'
+desc = "Open $SHELL here"
 
 [[mgr.prepend_keymap]]
-on = '!'
-for = 'windows'
+on = "!"
+for = "windows"
 run = "shell 'pwsh' --block"
-desc = 'Open PowerShell here'
+desc = "Open PowerShell here"
 
 [[mgr.prepend_keymap]]
-on = ';'
-run = 'plugin custom-shell -- auto --interactive'
-desc = 'custom-shell as default, interactive'
+on = ";"
+run = "plugin custom-shell -- auto --interactive"
+desc = "custom-shell as default, interactive"
 
 [[mgr.prepend_keymap]]
-on = ':'
-run = 'plugin custom-shell -- auto --interactive --wait --block'
-desc = 'custom-shell as default, interactive, block'
+on = ":"
+run = "plugin custom-shell -- auto --interactive --wait --block"
+desc = "custom-shell as default, interactive, block"
 
 [[mgr.prepend_keymap]]
-on = '<C-o>'
-run = 'shell -- dwag %s'
-for = 'windows'
-desc = 'Drag files/folders'
+on = "<C-o>"
+run = "shell -- dwag %s"
+for = "windows"
+desc = "Drag files/folders"
+
+[[mgr.prepend_keymap]]
+on = "<C-p>"
+run = "shell --block -- scp -r %s user@${SSH_CLIENT%%%% *}:~/Downloads/"
+desc = "SCP hovered file to SSH client"
 
 [[mgr.append_keymap]]
-on = ['g', 'o']
-run = 'cd ~/Documents'
-desc = 'Go ~/Documents'
+on = ["g", "o"]
+run = "cd ~/Documents"
+desc = "Go ~/Documents"
 
 [[mgr.append_keymap]]
-on = ['g', 's']
-run = 'cd ~/Pictures/Screenshots'
-desc = 'Go ~/Pictures/Screenshots'
+on = ["g", "s"]
+run = "cd ~/Pictures/Screenshots"
+desc = "Go ~/Pictures/Screenshots"
