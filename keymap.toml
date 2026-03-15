@@ -35,7 +35,7 @@ desc = "Drag files/folders"
 
 [[mgr.prepend_keymap]]
 on = "<C-p>"
-run = "shell --block -- scp -r %s user@${SSH_CLIENT%%%% *}:~/Downloads/"
+run = "shell --block -- scp -P 2222 -r %s user@localhost:~/Downloads/"
 desc = "SCP hovered file to SSH client"
 
 [[mgr.append_keymap]]
