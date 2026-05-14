@@ -10,8 +10,13 @@ edit = [
 convert_hevc = [
   { run = 'pwsh "E:\ps1\path\hevc.ps1" "-LiteralPath" "%s1"', block = true, desc = "Convert to HEVC", for = "windows" },
 ]
+inkscape = [
+  { run = 'C:\Program Files\Inkscape\bin\inkscape.exe "%h"', block = true, orphan = true, desc = "Edit with Inkscape", for = "windows" }
+]
 
 [open]
 prepend_rules = [
   { mime = "video/*", use = ["play", "reveal", "convert_hevc"] },
+  { mime = "text/*", use = ["edit", "open", "reveal"] },
+  { mime = "image/svg+xml", use = ["open", "inkscape", "reveal"] }
 ]
